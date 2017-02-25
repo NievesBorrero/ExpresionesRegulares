@@ -1,4 +1,4 @@
-package expresionesRegulares;
+Ipackage expresionesRegulares;
 
 import utiles.Teclado;
 
@@ -15,7 +15,7 @@ import utiles.Teclado;
  * @author Nieves Borrero
  *
  */
-public class contraseñaRobusta {
+public class ContraseniaRobusta {
 	public static void main(String[] args) {
 		do {
 			if (ExpresionRegular.CONTRASENIA_ROBUSTA.isFound(Teclado
