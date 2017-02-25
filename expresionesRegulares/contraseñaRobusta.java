@@ -3,27 +3,27 @@ package expresionesRegulares;
 import utiles.Teclado;
 
 /**
- * Diseña una aplicación en Java que reconozca una contraseña robusta (tantas
- * veces como el usuario quiera). Según las directivas de nivel de dominio de
- * Microsoft, para que una contraseña sea considerada segura, ha de cumplir una
- * serie de instrucciones: a. La contraseña tendrá una longitud de al menos seis
- * caracteres. b. La contraseña contendrá caracteres de tres de las cuatro
- * categorías siguientes: i. Caracteres en mayúsculas (A–Z) ii. Caracteres en
- * minúsculas (a–z) iii. Base de 10 dígitos (0–9) iv. Caracteres no
- * alfanuméricos (por ejemplo: !, $, #, o %)
+ * DiseÃ±a una aplicaciÃ³n en Java que reconozca una contraseÃ±a robusta (tantas
+ * veces como el usuario quiera). SegÃºn las directivas de nivel de dominio de
+ * Microsoft, para que una contraseÃ±a sea considerada segura, ha de cumplir una
+ * serie de instrucciones: a. La contraseÃ±a tendrÃ¡ una longitud de al menos seis
+ * caracteres. b. La contraseÃ±a contendrÃ¡ caracteres de tres de las cuatro
+ * categorÃ­as siguientes: i. Caracteres en mayÃºsculas (Aâ€“Z) ii. Caracteres en
+ * minÃºsculas (aâ€“z) iii. Base de 10 dÃ­gitos (0â€“9) iv. Caracteres no
+ * alfanumÃ©ricos (por ejemplo: !, $, #, o %)
  * 
  * @author Nieves Borrero
  *
  */
-public class contraseñaRobusta {
+public class contraseÃ±aRobusta {
 	public static void main(String[] args) {
 		do {
-			if (ExpresionRegular.CONTRASEÑA_ROBUSTA.isFound(Teclado
-					.leerCadena(ExpresionRegular.CONTRASEÑA_ROBUSTA
+			if (ExpresionRegular.CONTRASENIA_ROBUSTA.isFound(Teclado
+					.leerCadena(ExpresionRegular.CONTRASENIA_ROBUSTA
 							.getMessage())))
-				System.out.println("La contraseña es robusta");
+				System.out.println("La contraseÃ±a es robusta");
 			else
-				System.out.println("La contraseña NO es robusta");
+				System.out.println("La contraseÃ±a NO es robusta");
 
 		} while (Teclado.deseaContinuar("Desea probar de nuevo?"));
 	}
